@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FertilizerActivity"
+    android:background="@color/my_black">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navLayout"
+        android:layout_below="@+id/topNav">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Fnitrogen_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:drawableStart="@drawable/nitrogen"
+                    android:drawableTint="@color/yellow_2"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Nitrogen"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/yellow_2"
+                    android:textColorHint="@color/yellow_2" />
+
+                <EditText
+                    android:id="@+id/Fphosphorus_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/phosphorus"
+                    android:drawableTint="@color/yellow_2"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Phosphorus"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/yellow_2"
+                    android:textColorHint="@color/yellow_2" />
+
+                <EditText
+                    android:id="@+id/Fpotassium_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/potassium"
+                    android:drawableTint="@color/yellow_2"
+                    android:drawablePadding="16dp"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Potassium"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/yellow_2"
+                    android:textColorHint="@color/yellow_2" />
+
+                <EditText
+                    android:id="@+id/Fusercrop_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/crop"
+                    android:drawableTint="@color/yellow_2"
+                    android:drawablePadding="16dp"
+                    android:hint="Crop you want to grow"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/yellow_2"
+                    android:textColorHint="@color/yellow_2" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/FsuggestBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suggest"
+                android:backgroundTint="@color/yellow_2"
+                android:textStyle="bold"
+                android:textColor="@color/my_black"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="50dp"
+                android:layout_below="@+id/ll_input"/>
+
+            <TextView
+                android:id="@+id/result_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result: "
+                android:textSize="14sp"
+                android:textColor="@color/my_white"
+                android:layout_below="@+id/FsuggestBtn"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="16dp"/>
+            <TextView
+                android:id="@+id/Fsuggestion_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Press the Suggest button for the suggestions"
+                android:textSize="14sp"
+                android:textColor="@color/my_white"
+                android:layout_below="@+id/result_tv"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="16dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/cropRecom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Recommendation:"
+        android:textStyle="bold"
+        android:textColor="@color/my_white"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:id="@+id/topNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cropRecom"
+        android:background="@color/yellow_2">
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/my_black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Fcrop_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:text="Crop"
+                android:textAlignment="center"
+                android:textColor="@color/light_gray"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"/>
+            <TextView
+                android:id="@+id/Ffertilizer_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:text="Fertilizer"
+                android:textAlignment="center"
+                android:textColor="@color/my_black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/navLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:gravity="center">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bottomnav_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/FhomeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/home_icon"
+                    android:backgroundTint="@color/yellow_2"
+                    android:elevation="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FprofileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/account_icon"
+                    android:backgroundTint="@color/my_white"
+                    android:elevation="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/FaddImages"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle" />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/camera_icon"
+            android:backgroundTint="@color/my_white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

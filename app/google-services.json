@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "644677113599",
+    "project_id": "agromate-1e779",
+    "storage_bucket": "agromate-1e779.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644677113599:android:91374c98f3a643c60a1eca",
+        "android_client_info": {
+          "package_name": "com.ivar7284.agromate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0YVtSBBfRSs5mLTMGtDHAvbO3cs5Twow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
