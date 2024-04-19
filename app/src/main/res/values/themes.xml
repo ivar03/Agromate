@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Agromate" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/my_black</item>
-        <item name="android:navigationBarColor">@color/my_black</item>
+        <item name="colorPrimary">@color/my_white2</item>
+        <item name="android:navigationBarColor">@color/my_white2</item>
     </style>
 
     <style name="Theme.Agromate" parent="Base.Theme.Agromate" />

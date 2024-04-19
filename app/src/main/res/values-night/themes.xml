@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Agromate" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <item name="colorPrimary">@color/my_black</item>
-        <item name="android:navigationBarColor">@color/my_black</item>
+        <item name="colorPrimary">@color/my_white2</item>
+        <item name="android:navigationBarColor">@color/my_white2</item>
     </style>
 </resources>

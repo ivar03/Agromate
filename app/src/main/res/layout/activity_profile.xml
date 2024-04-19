@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
-    android:background="@color/my_black">
+    android:background="@color/my_white2">
 
     <LinearLayout
         android:id="@+id/PBackBtn"
@@ -93,7 +93,7 @@
             android:backgroundTint="@color/yellow_2"
             android:gravity="center"
             android:text="LOGOUT"
-            android:textColor="@color/my_black"
+            android:textColor="@color/my_white2"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userdetails"
